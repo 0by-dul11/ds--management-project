@@ -168,6 +168,7 @@ void insert(int n){
     }
     else{
         plyr *prev, *current,*newnode;
+        temp =head;
         newnode=(plyr*)malloc(sizeof(plyr));
     printf("Enter jersey number of player : ");
     scanf("%d",&newnode->jnum);
