@@ -242,7 +242,7 @@ void search(){
     printf("Enter a name to search: ");
     scanf("%s",&sname);
     while(temp!=NULL){
-        if(sname==temp->name){
+        if(strcmp(sname, temp->name)==0){
             flag=0;
             break;
         }
@@ -257,10 +257,8 @@ void search(){
     else{
         printf("Not Found.");
     }
-
-
-
 }
+
 void update_beg(){
     plyr *newnode;
     temp=head;
